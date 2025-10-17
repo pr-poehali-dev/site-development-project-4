@@ -338,6 +338,14 @@ const Index = () => {
                 </Card>
               ))}
             </div>
+          ) : selectedCategory === 'Новости' ? (
+            <div className="flex justify-center items-center py-20 animate-fade-in">
+              <div className="text-center">
+                <Icon name="Newspaper" className="mx-auto text-muted-foreground mb-4" size={64} />
+                <h3 className="text-4xl font-bold text-foreground mb-2">Ничего</h3>
+                <p className="text-xl text-muted-foreground">Новостей пока нет</p>
+              </div>
+            </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPosts.map((post, index) => (
