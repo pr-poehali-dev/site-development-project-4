@@ -202,10 +202,10 @@ const Index = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Статьи и публикации
+              ТХЛ ИЖСТАЛЬ
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Исследуем мир современных технологий и делимся экспертными знаниями
+              Команда, которая борется за победу в каждом матче
             </p>
           </div>
 
