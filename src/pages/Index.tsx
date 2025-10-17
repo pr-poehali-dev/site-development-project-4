@@ -49,28 +49,28 @@ const players: Player[] = [
     name: 'MAKSIMKA',
     number: 91,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/c2518b7e-0d8e-4ee6-a14f-a37fb5fd0136.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/3bbb79a8-62b2-45b3-9ad4-4ad7a13d1ffe.jpg'
   },
   {
     id: 2,
     name: 'DOMINGUE',
     number: 30,
     position: 'Вратарь',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/30363576-6a71-4c4d-a219-c411cf60f57d.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/a02d779b-a15e-4f1b-9533-3751f6add8b4.jpg'
   },
   {
     id: 3,
     name: 'FLAMIE',
     number: 0,
     position: 'Защитник',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/9f6d7500-90d7-4643-96db-992dc276d054.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/6f2e0d64-695c-45d0-b8d9-ae7414e44009.jpg'
   },
   {
     id: 4,
     name: 'WINK',
     number: 44,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/3245e14d-7ea0-407a-8b13-cf98953ff319.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/4cec861b-b493-48c3-80fc-41a3cbe1b5c2.jpg'
   }
 ];
 
