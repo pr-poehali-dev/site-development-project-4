@@ -57,6 +57,20 @@ const players: Player[] = [
     number: 30,
     position: 'Вратарь',
     image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/30363576-6a71-4c4d-a219-c411cf60f57d.jpg'
+  },
+  {
+    id: 3,
+    name: 'FLAMIE',
+    number: 0,
+    position: 'Защитник',
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/9f6d7500-90d7-4643-96db-992dc276d054.jpg'
+  },
+  {
+    id: 4,
+    name: 'WINK',
+    number: 44,
+    position: 'Нападающий',
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/3245e14d-7ea0-407a-8b13-cf98953ff319.jpg'
   }
 ];
 
