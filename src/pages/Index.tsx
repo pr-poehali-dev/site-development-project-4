@@ -29,14 +29,14 @@ const players: Player[] = [
     name: 'MAKSIMKA',
     number: 91,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/34b233bc-0062-4455-abad-3ca9cdf01891.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/c2518b7e-0d8e-4ee6-a14f-a37fb5fd0136.jpg'
   },
   {
     id: 2,
     name: 'DOMINGUE',
     number: 30,
     position: 'Вратарь',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/c658ac13-a2a8-4be3-9d86-9277e9055290.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/30363576-6a71-4c4d-a219-c411cf60f57d.jpg'
   }
 ];
 
