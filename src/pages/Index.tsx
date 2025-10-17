@@ -322,22 +322,22 @@ const Index = () => {
                   className="overflow-hidden border-white/10 bg-card/50 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20 animate-fade-in max-w-2xl w-full"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="py-12">
-                    <div className="flex items-center justify-center gap-8">
+                  <CardContent className="py-8 md:py-12">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
                       <div className="text-center">
-                        <div className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        <div className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                           {match.homeTeam}
                         </div>
                       </div>
                       
                       <div className="text-center">
-                        <div className="text-6xl font-bold text-accent">
+                        <div className="text-4xl md:text-6xl font-bold text-accent">
                           {match.time}
                         </div>
                       </div>
                       
                       <div className="text-center">
-                        <div className="text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+                        <div className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                           {match.awayTeam}
                         </div>
                       </div>
