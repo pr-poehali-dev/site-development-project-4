@@ -266,58 +266,33 @@ const Index = () => {
           )}
 
           {selectedCategory === 'Матчи' ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="flex justify-center">
               {matches.map((match, index) => (
                 <Card
                   key={match.id}
-                  className="overflow-hidden border-white/10 bg-card/50 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20 animate-fade-in"
+                  className="overflow-hidden border-white/10 bg-card/50 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/20 animate-fade-in max-w-2xl w-full"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardHeader className="text-center pb-4">
-                    <div className="flex items-center justify-center gap-2 mb-2">
-                      <Icon name="Calendar" className="text-primary" size={18} />
-                      <span className="text-sm text-muted-foreground">{match.date}</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2 mb-4">
-                      <Icon name="MapPin" className="text-accent" size={18} />
-                      <span className="text-sm text-muted-foreground">{match.location}</span>
-                    </div>
-                  </CardHeader>
-                  
-                  <CardContent className="space-y-6">
-                    <div className="flex items-center justify-between gap-4">
-                      <div className="flex-1 text-center">
-                        <div className="text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+                  <CardContent className="py-12">
+                    <div className="flex items-center justify-center gap-8">
+                      <div className="text-center">
+                        <div className="text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                           {match.homeTeam}
                         </div>
-                        <Badge className="bg-primary/20 text-primary border-primary/30">
-                          Хозяева
-                        </Badge>
                       </div>
                       
-                      <div className="flex flex-col items-center">
-                        <div className="text-4xl font-bold text-accent mb-2">
+                      <div className="text-center">
+                        <div className="text-6xl font-bold text-accent">
                           {match.time}
                         </div>
-                        <Icon name="Clock" className="text-muted-foreground" size={24} />
                       </div>
                       
-                      <div className="flex-1 text-center">
-                        <div className="text-3xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">
+                      <div className="text-center">
+                        <div className="text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
                           {match.awayTeam}
                         </div>
-                        <Badge className="bg-secondary/20 text-secondary border-secondary/30">
-                          Гости
-                        </Badge>
                       </div>
                     </div>
-                    
-                    <Button
-                      className="w-full bg-gradient-to-r from-primary via-secondary to-accent hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 text-white border-0"
-                    >
-                      Купить билет
-                      <Icon name="Ticket" className="ml-2" size={18} />
-                    </Button>
                   </CardContent>
                 </Card>
               ))}
