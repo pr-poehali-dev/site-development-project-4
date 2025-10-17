@@ -62,7 +62,7 @@ const players: Player[] = [
     id: 3,
     name: 'FLAMIE',
     number: 0,
-    position: 'Защитник',
+    position: 'Нападающий',
     image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/6f2e0d64-695c-45d0-b8d9-ae7414e44009.jpg'
   },
   {
