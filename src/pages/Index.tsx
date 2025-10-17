@@ -69,7 +69,7 @@ const players: Player[] = [
     id: 4,
     name: 'WINK',
     number: 44,
-    position: 'Нападающий',
+    position: 'Нападающий/Защитник',
     image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/4cec861b-b493-48c3-80fc-41a3cbe1b5c2.jpg'
   }
 ];
