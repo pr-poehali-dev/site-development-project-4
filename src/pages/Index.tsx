@@ -49,42 +49,42 @@ const players: Player[] = [
     name: 'MAKSIMKA',
     number: 91,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/3bbb79a8-62b2-45b3-9ad4-4ad7a13d1ffe.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/845b8654-9646-4302-b44b-5a4217ae57ce.jpg'
   },
   {
     id: 2,
     name: 'DOMINGUE',
     number: 30,
     position: 'Вратарь',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/a02d779b-a15e-4f1b-9533-3751f6add8b4.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/6e861aba-0d89-487b-86ee-7295b1b58517.jpg'
   },
   {
     id: 3,
     name: 'FLAMIE',
     number: 0,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/6f2e0d64-695c-45d0-b8d9-ae7414e44009.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/03451142-af06-4e42-9bc6-d0d75aca31ae.jpg'
   },
   {
     id: 4,
     name: 'WINK',
     number: 44,
     position: 'Нападающий/Защитник',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/4cec861b-b493-48c3-80fc-41a3cbe1b5c2.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/b43fff53-0509-471f-b3e5-86bbbd02396e.jpg'
   },
   {
     id: 5,
     name: 'AUGUST',
     number: 9,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/29767f92-8ad4-4806-994c-d355665aafb7.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/e2a446b1-4efc-4a8b-ba99-0e6c5e90c5a2.jpg'
   },
   {
     id: 6,
     name: 'BENZO',
     number: 38,
     position: 'Нападающий',
-    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/51b440f5-4702-44b5-81e4-a5655356ae9c.jpg'
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/f8322800-5f40-4d1a-9d57-cc95a2b02851.jpg'
   }
 ];
 
