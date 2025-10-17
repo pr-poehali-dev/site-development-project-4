@@ -78,18 +78,17 @@ const blogPosts: BlogPost[] = [
   }
 ];
 
-const categories = ['Все', 'Технологии', 'Дизайн', 'Разработка'];
+const categories = ['Состав', 'Матчи', 'Новости'];
 const allTags = Array.from(new Set(blogPosts.flatMap(post => post.tags)));
 
 const Index = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Все');
+  const [selectedCategory, setSelectedCategory] = useState('Состав');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [showAbout, setShowAbout] = useState(false);
 
   const filteredPosts = blogPosts.filter(post => {
-    const categoryMatch = selectedCategory === 'Все' || post.category === selectedCategory;
     const tagMatch = selectedTags.length === 0 || selectedTags.some(tag => post.tags.includes(tag));
-    return categoryMatch && tagMatch;
+    return tagMatch;
   });
 
   const toggleTag = (tag: string) => {
@@ -308,7 +307,7 @@ const Index = () => {
               </p>
               <Button
                 onClick={() => {
-                  setSelectedCategory('Все');
+                  setSelectedCategory('Состав');
                   setSelectedTags([]);
                 }}
                 className="bg-gradient-to-r from-primary to-secondary text-white border-0"
