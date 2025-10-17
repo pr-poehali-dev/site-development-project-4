@@ -4,6 +4,14 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
+interface Player {
+  id: number;
+  name: string;
+  number: number;
+  position: string;
+  image: string;
+}
+
 interface BlogPost {
   id: number;
   title: string;
@@ -14,6 +22,23 @@ interface BlogPost {
   readTime: string;
   image: string;
 }
+
+const players: Player[] = [
+  {
+    id: 1,
+    name: 'MAKSIMKA',
+    number: 91,
+    position: 'Нападающий',
+    image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80'
+  },
+  {
+    id: 2,
+    name: 'DOMINGUE',
+    number: 30,
+    position: 'Вратарь',
+    image: 'https://images.unsplash.com/photo-1589487391730-58f20eb2c308?w=400&q=80'
+  }
+];
 
 const blogPosts: BlogPost[] = [
   {
@@ -238,7 +263,49 @@ const Index = () => {
             </div>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {selectedCategory === 'Состав' ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {players.map((player, index) => (
+                <Card
+                  key={player.id}
+                  className="group overflow-hidden border-white/10 bg-card/50 backdrop-blur-xl hover:border-primary/50 transition-all duration-500 hover:scale-[1.05] hover:shadow-2xl hover:shadow-primary/20 animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={player.image}
+                      alt={player.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 left-3 z-20">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-2xl border-4 border-white/20">
+                        {player.number}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <CardHeader className="text-center">
+                    <CardTitle className="text-2xl group-hover:text-primary transition-colors duration-300">
+                      #{player.number} {player.name}
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      {player.position}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <Button
+                      className="w-full bg-gradient-to-r from-primary via-secondary to-accent hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 text-white border-0"
+                    >
+                      Подробнее
+                      <Icon name="ArrowRight" className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredPosts.map((post, index) => (
               <Card
                 key={post.id}
@@ -297,6 +364,7 @@ const Index = () => {
               </Card>
             ))}
           </div>
+          )}
 
           {filteredPosts.length === 0 && (
             <div className="text-center py-16 animate-fade-in">
