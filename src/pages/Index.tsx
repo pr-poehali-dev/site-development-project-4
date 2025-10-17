@@ -136,9 +136,9 @@ const Index = () => {
                 </div>
                 <div>
                   <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                    TechBlog
+                    ТХЛ ИЖСТАЛЬ
                   </h1>
-                  <p className="text-sm text-muted-foreground">Современный блог о технологиях</p>
+                  <p className="text-sm text-muted-foreground">Хоккейный клуб</p>
                 </div>
               </div>
               
@@ -148,7 +148,7 @@ const Index = () => {
                 onClick={() => setShowAbout(!showAbout)}
               >
                 <Icon name="Info" className="mr-2" size={18} />
-                О блоге
+                О команде
               </Button>
             </div>
           </div>
