@@ -227,25 +227,7 @@ const Index = () => {
               ))}
             </div>
 
-            <div className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
-              <p className="text-sm text-muted-foreground text-center mb-3">Фильтр по тегам:</p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {allTags.map(tag => (
-                  <Badge
-                    key={tag}
-                    variant={selectedTags.includes(tag) ? 'default' : 'outline'}
-                    className={`cursor-pointer transition-all duration-300 ${
-                      selectedTags.includes(tag)
-                        ? 'bg-accent hover:bg-accent/90 text-white border-0'
-                        : 'border-white/20 hover:border-accent/50 hover:bg-accent/10'
-                    }`}
-                    onClick={() => toggleTag(tag)}
-                  >
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {selectedTags.length > 0 && (
