@@ -85,6 +85,27 @@ const players: Player[] = [
     number: 38,
     position: 'Нападающий',
     image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/f8322800-5f40-4d1a-9d57-cc95a2b02851.jpg'
+  },
+  {
+    id: 7,
+    name: 'SHABANOV',
+    number: 49,
+    position: 'Защитник',
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/0bd0f68d-222e-4232-8ed4-e5e8f7f7847f.jpg'
+  },
+  {
+    id: 8,
+    name: 'IANVINOV',
+    number: 97,
+    position: 'Нападающий',
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/318b1314-5b3b-492d-97d2-e4cd8fe5e480.jpg'
+  },
+  {
+    id: 9,
+    name: 'ITSKUGOO',
+    number: 17,
+    position: 'Нападающий',
+    image: 'https://cdn.poehali.dev/projects/942b5e06-df2e-4ff0-a1c4-de786e9c261d/files/bfb80404-1747-4588-8de3-86adf54bdce7.jpg'
   }
 ];
 
